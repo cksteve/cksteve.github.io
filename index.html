@@ -187,15 +187,15 @@ id="canvas"></canvas>             </div></div>
 		    var together = new Date();
 		    // 这里改时间，改完以后点下面的绿色按钮
 		    // 年月日
-		    together.setFullYear(2016, 03, 08);
+		    together.setUTCFullYear(2016, 03, 08);
 		    // 小时
-		    together.setHours(22);
+		    together.setUTCHours(21);
 		    // 分钟
-		    together.setMinutes(00);
+		    together.setUTCMinutes(28);
 		    // 秒
-		    together.setSeconds(0);
+		    together.setUTCSeconds(0);
 		    // 毫秒，一般不管他，因为你没有手表准确的告诉你毫秒...
-		    together.setMilliseconds(0);
+		    together.setUTCMilliseconds(0);
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
